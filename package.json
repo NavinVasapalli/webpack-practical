@@ -16,7 +16,8 @@
   },
   "devDependencies": {
     "sass": "^1.36.0",
-    "sass-loader": "^12.1.0"
+    "sass-loader": "^12.1.0",
+    "terser-webpack-plugin": "^5.1.4"
   },
   "scripts": {
     "build": "npx webpack",

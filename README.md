@@ -73,6 +73,17 @@ this feature will help to import css into the componets
 
 ---  plugins ---
 
+plugins are additional javascript libraies that do everything that loaders cannot do.
+
+plugins can also modify how bundles themselves are created 
+
+using plugins we can define global constants to access accross the application.
+
+We can minify the result in bundle so it consume less space and can be easily downloaded 
+
+Ex :
+UglifyJS plugin takes the bundle.js and minimizes the content to decrease the bundle size 
+
 
 
 
