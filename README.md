@@ -84,6 +84,9 @@ We can minify the result in bundle so it consume less space and can be easily do
 Ex :
 UglifyJS plugin takes the bundle.js and minimizes the content to decrease the bundle size 
 
+loading css and js in seperate bundles
+
+MiniCssExtractPlugin to extract the css into a seperate file
 
 
 
