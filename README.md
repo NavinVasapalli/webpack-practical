@@ -27,12 +27,12 @@ assert modules (object)
 rules 
 the object in the rules contain 
 
-ex :  module :{
+ex :  
+module :{
     rules: [
         {
             test : /\.(png|jpg)$/, //(define what image formates can be accepted)
             type : 'asset/resource'
-
         }
     ]
 }
@@ -89,8 +89,25 @@ loading css and js in seperate bundles
 MiniCssExtractPlugin to extract the css into a seperate file
 
 
+--- browser caching ---
 
+- To avoid browser cache and reload the js or css file when there is some change in the sorce code append a hash after file name so that the hash changes whenever the file  changes.
 
+ex:
+styles.[contenthash].css
+main.[contenthash].js
 
+- clean-webpack-plugin is used to clean or delet the pervious build files
+- **/* - to remove all contents in the directroy 
+- html-webpack-plugin will add the  updated file name to html while build
 
+--- handlebars ---
 
+There are different types of template engines
+- pug
+- ejs
+- underscore
+- handlebars
+- html-loader
+
+handlebars is a template engine that seperates the bussiness logic from the presentation 
